@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+
+:root {
+  --text-font: "Arvo", serif;
+}
+
+* {
+  font-family: var(--text-font);
+}
