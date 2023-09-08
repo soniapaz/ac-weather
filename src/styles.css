@@ -4,6 +4,7 @@
   --text-font: "Arvo", serif;
   --text-color: #fff;
   --color-primary: #6bb888;
+  --shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 320px) {
@@ -29,10 +30,6 @@ main {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.container {
-  background-color: pink;
 }
 
 .search-bar,
@@ -73,4 +70,114 @@ button > span {
 
 .pipe {
   border-left: 1px solid var(--text-color);
+}
+
+#current-conditions {
+  background-color: #b7b398;
+  border-radius: 30px;
+  padding: 25px 20px 25px 20px;
+  color: var(--text-color);
+  text-align: center;
+  box-shadow: var(--shadow);
+  width: 18rem;
+}
+
+#current-conditions h1 {
+  font-size: 60px;
+  padding-top: 20px;
+  margin: 0;
+}
+
+#current-conditions p {
+  font-size: 13px;
+  padding-top: 5px;
+  padding-bottom: 40px;
+  margin: 0;
+}
+
+#current-conditions span {
+  font-size: 14px;
+}
+
+#date-city-weather-column {
+  background-color: #f28b73;
+  border-radius: 30px;
+  padding: 25px 20px 25px 20px;
+  color: var(--text-color);
+  text-align: end;
+  box-shadow: var(--shadow);
+  width: 18rem;
+}
+
+#current-local-date,
+#current-local-hour {
+  font-size: 16px;
+  margin: 0;
+}
+
+#current-city {
+  font-size: 40px;
+}
+
+#current-weather-icon {
+  font-size: 55px;
+  position: relative;
+  top: 10px;
+}
+
+#current-weather-text {
+  font-size: 16px;
+  position: relative;
+  top: 20px;
+}
+
+#forecast-day-1,
+#forecast-day-2,
+#forecast-day-3,
+#forecast-day-4,
+#forecast-day-5 {
+  border-radius: 30px;
+  padding-top: 15px;
+  width: 17.8%;
+  color: var(--text-color);
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+#forecast-day-1 {
+  background-color: #f28b73;
+}
+
+#forecast-day-2 {
+  background-color: #74c894;
+}
+
+#forecast-day-3 {
+  background-color: #85cfe2;
+}
+
+#forecast-day-4 {
+  background-color: #fbacc7;
+}
+
+#forecast-day-5 {
+  background-color: #b7b398;
+}
+
+#thu-icon,
+#fri-icon,
+#sat-icon,
+#sunday-icon,
+#mon-icon {
+  font-size: 40px;
+}
+
+#thu-forecast,
+#fri-forecast,
+#sat-forecast,
+#sun-forecast,
+#mon-forecast {
+  padding-bottom: 15px;
+  padding-right: 7px;
+  padding-top: 20px;
 }

@@ -27,9 +27,11 @@
       <div class="container">
         <div class="content ps-2 pe-2 ps-md-0 pe-md-0">
           <form action="#">
-            <div class="row justify-content-center justify-content-md-between">
+            <div
+              class="row first-row justify-content-center justify-content-md-between"
+            >
               <div
-                class="col-12 col-md-8 d-flex justify-content-between search-bar"
+                class="col-12 col-md-8 d-flex justify-content-between align-items-center search-bar"
               >
                 <input
                   type="text"
@@ -51,7 +53,9 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-7 col-md-3 ps-0 pe-0 mt-3 mt-md-0">
+              <div
+                class="col-7 col-md-3 ps-0 pe-0 mt-3 mt-md-0 align-items-center"
+              >
                 <ul
                   class="d-flex justify-content-center justify-content-md-between m-0 secondary-buttons"
                 >
@@ -86,81 +90,88 @@
               </div>
             </div>
           </form>
-        </div>
-      </div>
-      <!--<div class="container">
-        <section class="row first-line">
-          <div class="container d-flex flex-wrap justify-content-between">
-            <div class="col-md-7 d-flex search-bar">
-              <form action="#">
-                <input
-                  type="text"
-                  id="search-input"
-                  placeholder="Search city"
-                  autocomplete="off"
-                />
-              </form>
-              <ul class="nav col d-flex justify-content-end list-unstyled">
-                <li class="ms-1">
-                  <button id="delete-button" type="reset" title="Clear">
-                    <i class="fa-solid fa-xmark"></i>
-                  </button>
-                </li>
-                <li class="ms-1"><span class="pipe"></span></li>
-                <li class="ms-1">
-                  <button id="search-button" type="submit" title="Search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </button>
-                </li>
-              </ul>
-            </div>
-            <div class="secondary-buttons">
-              <ul
-                class="nav col-auto d-flex align-items-center justify-content-center list-unstyled"
-              >
-                <li class="ms-2">
-                  <button
-                    id="location-button"
-                    type="button"
-                    title="Current location"
-                  >
-                    <i class="fa-solid fa-location-dot"></i>
-                  </button>
-                </li>
-                <li class="ms-2">
-                  <button
-                    id="fahrenheit-celsius-button"
-                    type="button"
-                    title="Change temp unit"
-                  >
-                    <span><strong>ºF</strong></span>
-                  </button>
-                </li>
-                <li class="ms-2">
-                  <button
-                    id="play-pause-button"
-                    type="button"
-                    title="Play music"
-                  >
-                    <i class="fa-solid fa-play"></i>
-                  </button>
-                </li>
-              </ul>
+          <div class="city-weather">
+            <div
+              class="row second-row mt-5 justify-content-center justify-content-md-between"
+            >
+              <div class="col-5" id="current-conditions">
+                <div class="row">
+                  <span class="col-6" id="current-max-temp">Max.: 18 ºC ↑</span>
+                  <span class="col-6" id="current-min-temp">Min.: 13 ºC ↓</span>
+                </div>
+                <h1 id="current-temp">16 ºC</h1>
+                <p id="current-feels-like">Feels like 16 ºC</p>
+                <div class="row">
+                  <span class="col-6">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span>70<span id="current-humidity"></span> %</span>
+                  </span>
+                  <span class="col-6">
+                    <i class="fa-solid fa-wind"></i>
+                    <span>4<span id="current-wind"></span> km/h</span>
+                  </span>
+                </div>
+              </div>
+              <div class="col-5 mt-4 mt-md-0" id="date-city-weather-column">
+                <p id="current-local-date">Wednesday, December 14</p>
+                <p id="current-local-hour">19:14</p>
+                <h2 id="current-city">Málaga</h2>
+                <i id="current-weather-icon" class="fa-solid fa-sun"></i>
+                <p id="current-weather-text">Rain</p>
+              </div>
             </div>
           </div>
-        </section>
-        <div class="row">
-          <div class="col"></div>
-          <div class="col"></div>
+          <div class="city-forecast">
+            <div class="row third-row mt-5 justify-content-between">
+              <div id="forecast-day-1" class="col-2">
+                <div class="row">
+                  <p>THU</p>
+                </div>
+                <div id="forecast-day" class="row">
+                  <i id="thu-icon" class="fa-solid fa-cloud-rain"></i>
+                  <span id="thu-forecast">18 º | 13 º</span>
+                </div>
+              </div>
+              <div id="forecast-day-2" class="col-2">
+                <div class="row">
+                  <p>FRI</p>
+                </div>
+                <div id="forecast-day" class="row">
+                  <i id="fri-icon" class="fa-solid fa-cloud-rain"></i>
+                  <span id="fri-forecast">16 º | 9 º</span>
+                </div>
+              </div>
+              <div id="forecast-day-3" class="col-2">
+                <div class="row">
+                  <p>SAT</p>
+                </div>
+                <div id="forecast-day" class="row">
+                  <i id="sat-icon" class="fa-solid fa-cloud-rain"></i>
+                  <span id="sat-forecast">17 º | 9 º</span>
+                </div>
+              </div>
+              <div id="forecast-day-4" class="col-2">
+                <div class="row">
+                  <p>SUN</p>
+                </div>
+                <div id="forecast-day" class="row">
+                  <i id="sunday-icon" class="fa-solid fa-sun"></i>
+                  <span id="sun-forecast">18 º | 9 º</span>
+                </div>
+              </div>
+              <div id="forecast-day-5" class="col-2">
+                <div class="row">
+                  <p>MON</p>
+                </div>
+                <div id="forecast-day" class="row">
+                  <i id="mon-icon" class="fa-solid fa-cloud-sun"></i>
+                  <span id="mon-forecast">17 º | 10 º</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="row">
-          <div class="col"></div>
-          <div class="col"></div>
-          <div class="col"></div>
-          <div class="col"></div>
-          <div class="col"></div>
-        </div>
-      </div>-->
+      </div>
     </main>
     <script src="/src/scripts.js"></script>
   </body>
