@@ -2,8 +2,67 @@
 
 :root {
   --text-font: "Arvo", serif;
+  --text-color: #fff;
+  --color-primary: #6bb888;
+}
+
+@media (max-width: 320px) {
+  #search-input {
+    width: 90%;
+  }
 }
 
 * {
   font-family: var(--text-font);
+}
+
+main {
+  margin-top: 5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  background-color: pink;
+}
+
+.search-bar,
+.secondary-buttons {
+  background-color: var(--color-primary);
+  border-radius: 30px;
+  padding: 10px 20px 10px 20px;
+  border: none;
+}
+
+input {
+  border: none;
+  border-radius: 30px;
+  background-color: transparent;
+  color: var(--text-color);
+  outline: none;
+  width: 100%;
+}
+
+input::placeholder {
+  color: var(--text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0 0.8rem;
+}
+
+button > i,
+button > span {
+  color: var(--text-color);
+}
+
+.pipe {
+  border-left: 1px solid var(--text-color);
 }

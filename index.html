@@ -23,7 +23,145 @@
     <title>Island Forecast</title>
   </head>
   <body>
-    <main class="container"></main>
+    <main>
+      <div class="container">
+        <div class="content ps-2 pe-2 ps-md-0 pe-md-0">
+          <form action="#">
+            <div class="row justify-content-center justify-content-md-between">
+              <div
+                class="col-12 col-md-8 d-flex justify-content-between search-bar"
+              >
+                <input
+                  type="text"
+                  id="search-input"
+                  placeholder="Search city"
+                  autocomplete="off"
+                />
+                <ul class="d-flex justify-content-end m-0">
+                  <li class="ms-1">
+                    <button id="delete-button" type="reset" title="Clear">
+                      <i class="fa-solid fa-xmark"></i>
+                    </button>
+                  </li>
+                  <li class="ms-1"><span class="pipe"></span></li>
+                  <li class="ms-1">
+                    <button id="search-button" type="submit" title="Search">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-7 col-md-3 ps-0 pe-0 mt-3 mt-md-0">
+                <ul
+                  class="d-flex justify-content-center justify-content-md-between m-0 secondary-buttons"
+                >
+                  <li class="ms-2 me-2 ms-md-1 me-md-1">
+                    <button
+                      id="location-button"
+                      type="button"
+                      title="Current location"
+                    >
+                      <i class="fa-solid fa-location-dot"></i>
+                    </button>
+                  </li>
+                  <li class="ms-2 me-2 ms-md-1 me-md-1">
+                    <button
+                      id="fahrenheit-celsius-button"
+                      type="button"
+                      title="Change temp unit"
+                    >
+                      <span><strong>ºF</strong></span>
+                    </button>
+                  </li>
+                  <li class="ms-2 me-2 ms-md-1 me-md-1">
+                    <button
+                      id="play-pause-button"
+                      type="button"
+                      title="Play music"
+                    >
+                      <i class="fa-solid fa-play"></i>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!--<div class="container">
+        <section class="row first-line">
+          <div class="container d-flex flex-wrap justify-content-between">
+            <div class="col-md-7 d-flex search-bar">
+              <form action="#">
+                <input
+                  type="text"
+                  id="search-input"
+                  placeholder="Search city"
+                  autocomplete="off"
+                />
+              </form>
+              <ul class="nav col d-flex justify-content-end list-unstyled">
+                <li class="ms-1">
+                  <button id="delete-button" type="reset" title="Clear">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                </li>
+                <li class="ms-1"><span class="pipe"></span></li>
+                <li class="ms-1">
+                  <button id="search-button" type="submit" title="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="secondary-buttons">
+              <ul
+                class="nav col-auto d-flex align-items-center justify-content-center list-unstyled"
+              >
+                <li class="ms-2">
+                  <button
+                    id="location-button"
+                    type="button"
+                    title="Current location"
+                  >
+                    <i class="fa-solid fa-location-dot"></i>
+                  </button>
+                </li>
+                <li class="ms-2">
+                  <button
+                    id="fahrenheit-celsius-button"
+                    type="button"
+                    title="Change temp unit"
+                  >
+                    <span><strong>ºF</strong></span>
+                  </button>
+                </li>
+                <li class="ms-2">
+                  <button
+                    id="play-pause-button"
+                    type="button"
+                    title="Play music"
+                  >
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col"></div>
+        </div>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"></div>
+        </div>
+      </div>-->
+    </main>
     <script src="/src/scripts.js"></script>
   </body>
 </html>
