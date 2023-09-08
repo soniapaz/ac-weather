@@ -16,6 +16,14 @@
   font-family: var(--text-font);
 }
 
+body {
+  background-image: url(/images/ac-background-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
+}
+
 main {
   margin-top: 5rem;
   max-width: 800px;
