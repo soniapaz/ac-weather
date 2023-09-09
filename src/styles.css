@@ -7,6 +7,27 @@
   --shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
+/*4K*/
+@media (max-width: 2560px) {
+  .container {
+    margin-left: -30% !important;
+  }
+}
+
+/*Laptop L*/
+@media (max-width: 1900px) {
+  .container {
+    margin-left: -22% !important;
+  }
+}
+
+/*Laptop*/
+@media (max-width: 1400px) {
+  .container {
+    margin-left: auto !important;
+  }
+}
+
 /*Mobile L*/
 @media (max-width: 576px) {
   main {
