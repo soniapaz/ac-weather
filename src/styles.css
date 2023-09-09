@@ -7,6 +7,14 @@
   --shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
+/*Mobile L*/
+@media (max-width: 576px) {
+  main {
+    margin-top: 2.5rem !important;
+  }
+}
+
+/*Mobile S*/
 @media (max-width: 320px) {
   #search-input {
     width: 90%;
@@ -142,7 +150,7 @@ audio {
 #forecast-day-5 {
   border-radius: 30px;
   padding-top: 15px;
-  width: 17.8%;
+  width: 17%;
   color: var(--text-color);
   text-align: center;
   box-shadow: var(--shadow);
