@@ -10,10 +10,10 @@ function showSearchResult(response) {
   initialConditions.innerHTML = response.data.weather[0].main;
 
   let initialHumidity = document.querySelector("#current-humidity");
-  initialHumidity.innerHTML = response.data.main.humidity;
+  initialHumidity.innerHTML = `${response.data.main.humidity} %`;
 
   let initialWind = document.querySelector("#current-wind");
-  initialWind.innerHTML = Math.round(response.data.wind.speed);
+  initialWind.innerHTML = `${Math.round(response.data.wind.speed)} km/h`;
 
   let initialFeelsLike = document.querySelector("#current-feels-like");
   initialFeelsLike.innerHTML = `Feels like ${Math.round(
@@ -244,6 +244,10 @@ function showTempInFahrenheit(response) {
   let initialMinTemp = document.querySelector("#current-min-temp");
   initialMinTemp.innerHTML = `Min.: ${showMinTempInFahrenheit} ºF ↓`;
 
+  let showSpeedInMiles = Math.round(response.data.wind.speed * 0.621371);
+  let initialWindSpeed = document.querySelector("#current-wind");
+  initialWindSpeed.innerHTML = `${showSpeedInMiles} mph`;
+
   getForecast(response.data.coord); // Change five-day forecast to Fahrenheit
 }
 
@@ -263,6 +267,10 @@ function showTempInCelsius(response) {
   let showMinTempInCelsius = Math.round(response.data.main.temp_min);
   let initialMinTemp = document.querySelector("#current-min-temp");
   initialMinTemp.innerHTML = `Min.: ${showMinTempInCelsius} ºC ↓`;
+
+  let showSpeedInKilometers = Math.round(response.data.wind.speed);
+  let initialWindSpeed = document.querySelector("#current-wind");
+  initialWindSpeed.innerHTML = `${showSpeedInKilometers} km/h`;
 
   getForecast(response.data.coord); // Change five-day forecast to Celsius
 }
