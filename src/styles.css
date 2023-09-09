@@ -33,6 +33,16 @@
   main {
     margin-top: 2.5rem !important;
   }
+
+  #date-city-weather-column {
+    width: 18rem !important;
+  }
+
+  #current-city {
+    font-size: 30px !important;
+    margin-bottom: 0 !important;
+    margin-top: 5px;
+  }
 }
 
 /*Mobile S*/
@@ -140,7 +150,7 @@ audio {
   color: var(--text-color);
   text-align: end;
   box-shadow: var(--shadow);
-  width: 18rem;
+  width: 21rem;
 }
 
 #current-local-date,
@@ -150,7 +160,7 @@ audio {
 }
 
 #current-city {
-  font-size: 40px;
+  font-size: 38px;
 }
 
 #current-weather-icon {
