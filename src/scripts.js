@@ -342,7 +342,8 @@ function showForecast(response) {
 
   let fiveDayForecast = document.querySelector("#forecast");
 
-  let forecastHTML = '<div class="row ps-0 pe-0 justify-content-between">';
+  let forecastHTML =
+    '<div class="row ps-1 ps-md-0 pe-1 pe-md-0 justify-content-evenly justify-content-md-between">';
   forecast.forEach(function (forecastDay, index) {
     if (index < 5) {
       let addProperIcon = ``;
@@ -380,7 +381,7 @@ function showForecast(response) {
       forecastHTML =
         forecastHTML +
         `
-      <div id="forecast-day-${index + 1}" class="col-2">
+      <div id="forecast-day-${index + 1}" class="col-5 col-md-2">
             <div class="row">
               <p>${showForecastDayName(forecastDay.dt)}</p>
             </div>
@@ -388,7 +389,7 @@ function showForecast(response) {
               <i id="thu-icon" class="${addProperIcon}"></i>
               <span id="thu-forecast">${Math.round(
                 forecastDay.temp.max
-              )} º | ${Math.round(forecastDay.temp.min)} º</span>
+              )} º |&nbsp ${Math.round(forecastDay.temp.min)} º</span>
             </div>
           </div>`;
     }
