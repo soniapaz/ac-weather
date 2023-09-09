@@ -161,6 +161,8 @@ audio {
 
 #current-city {
   font-size: 38px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #current-weather-icon {
