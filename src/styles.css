@@ -117,6 +117,7 @@ button {
   padding: 0 0.8rem;
 }
 
+li > a,
 button > i,
 button > span {
   color: var(--text-color);
